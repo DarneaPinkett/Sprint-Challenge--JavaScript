@@ -93,6 +93,9 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 const contactInfo = [];
+  for (i=0; i < graduates.length; i++) {
+    contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
+  }
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
@@ -151,6 +154,9 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
+zooAnimals.reduce((population, zooAnimal, index, zooAnimals) => {
+  return population += zooAnimal.population;
+})
 console.log(populationTotal);
 
 
