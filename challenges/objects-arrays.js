@@ -8,23 +8,47 @@
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
+
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
+
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+const dinosaur1 = {
+  name: "tyannosaurs",
+  diet: "carvivorous",
+  weight: "7000kg",
+  length: "12m",
+  period: "Late Cretaceous",
+};
+console.log(dinosaur1.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+const dinosaur3 = {
+  name: "velociraptor",
+  diet: "carvivorous",
+  weight: "15kg",
+  length: "1.8m",
+  period: "Late Cretaceous",
+};
+console.log(dinosaur3.diet);
 
 // How long was a stegosaurus?
-console.log();
+const dinosaur2 = {
+  name: "stegosaurus",
+  diet: "herbivorous",
+  weight: "2000kg",
+  length: "9m",
+  period: "Late Jurassic",
+};
+console.log(dinosaur2.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+
+console.log(dinosaur1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
@@ -91,6 +115,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+zooAnimals.forEach(zooAnimal => displayNames.push(`Name: ${zooAnimal.animal_name}, Scientific: ${zooAnimal.scientific_name}`))
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -100,6 +125,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
+zooAnimals.map(zooAnimal => lowCaseAnimalNames.push(`${zooAnimal.animal_name.toLowerCase()}`))
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
