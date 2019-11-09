@@ -23,6 +23,9 @@ const dinosaur1 = {
   weight: "7000kg",
   length: "12m",
   period: "Late Cretaceous",
+  roar: function(){
+    return "RAWERSRARARWERSARARARRRR!";
+  }
 };
 console.log(dinosaur1.weight);
 
@@ -52,7 +55,7 @@ console.log(dinosaur1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(dinosaur1.roar());
 
 
 // ==== Arrays ====
@@ -76,6 +79,11 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
+  for (i=0; i < graduates.length; i++) {
+    graduates[i].university;
+    universities.push(graduates[i].university);
+    universities.sort();
+  }
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -134,6 +142,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+zooAnimals.filter(zooAnimal => {})
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
