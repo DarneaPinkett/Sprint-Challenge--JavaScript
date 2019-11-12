@@ -30,9 +30,15 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+Is that .map returns a new array of elements while in turn passing each element back to the callback.
+
 2. What is the difference between a function and a method?
 
+a function is a piece of code that is called by name. A Method is a piece of code that is called by a name associated with a object.
+
 3. What is closure?
+
+A closure is an inner function that has access to the outer (enclosing) function's variables—scope chain.
 
 4. Describe the four rules of the 'this' keyword.
 
